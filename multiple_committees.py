@@ -21,7 +21,7 @@ while True:
         bool_chair = False
     number_of_members = int(input("How many members?"))
     if number_of_members > free_profs:
-        combos = committee(free_profs, number_of_members, bool_chair)
+        combos = committee(free_profs, free_profs, bool_chair)
         print("Assigning only", free_profs, "members to the", committee_name, "committee.")
         print("there are", combos, "ways to form the", committee_name, "commitee.")
         total_combinations = total_combinations * combos
